@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="master-artboard" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 1400 980;" width="26px" height="26px"><rect id="ee-background" x="0" y="0" width="26" height="26" style="fill: rgb(0, 0, 0); fill-opacity: 0; pointer-events: none;"/><defs><linearGradient id="gradient-0" gradientUnits="userSpaceOnUse" x1="24.6171875" y1="17.34375" x2="24.6171875" y2="49.953125">
+                <stop offset="0" style="stop-color: #ffffff"/>
+                <stop offset="1" style="stop-color: #cccccc"/>
+              </linearGradient><radialGradient id="gradient-1" gradientUnits="objectBoundingBox" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" style="stop-color: #ffffff"/>
+                <stop offset="1" style="stop-color: #cccccc"/>
+              </radialGradient><radialGradient id="gradient-2" gradientUnits="objectBoundingBox" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" style="stop-color: #000000"/>
+                <stop offset="1" style="stop-color: #000000"/>
+              </radialGradient></defs><g transform="matrix(0.04586104163811459, 0, 0, 0.04586104163811459, -1.7763568394002505e-15, -8.881784197001252e-15)"><g>
+	<path d="M143.878,181.342l104.255,237.596c0,0,3.181,8.291,13.701,8.291h43.5c10.528,0,13.666-8.291,13.666-8.291l104.281-237.596&#10;&#9;&#9;c0,0-23.021,30.488-85.206,33.278c-7.16,0.332-11.489,0.434-15.546,2.764c-4.906,3.155-5.902,7.186-6.905,9.839l-32.036,88.122&#10;&#9;&#9;l-32.037-88.122c-1.028-2.654-2.023-6.685-6.905-9.839c-4.073-2.331-8.402-2.433-15.581-2.764&#10;&#9;&#9;C166.908,211.831,143.878,181.342,143.878,181.342z" style="fill: rgb(255, 174, 0);"/>
+	<path d="M283.528,498.438c117.854,0,213.732-95.87,213.732-213.707c0-117.862-95.878-213.741-213.732-213.741&#10;&#9;&#9;c-117.845,0-213.724,95.879-213.724,213.741C69.805,402.567,165.684,498.438,283.528,498.438z M477.182,284.73&#10;&#9;&#9;c0,106.764-86.854,193.628-193.653,193.628c-106.781,0-193.653-86.864-193.653-193.628c0-106.798,86.872-193.67,193.653-193.67&#10;&#9;&#9;C390.327,91.06,477.182,177.932,477.182,284.73z" style="fill: rgb(255, 174, 0);"/>
+</g></g></svg>

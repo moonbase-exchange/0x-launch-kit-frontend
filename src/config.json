@@ -19,6 +19,21 @@
             "displayDecimals": 2
         },
         {
+            "symbol": "btcv",
+            "name": "Bitcoin Volatility",
+            "primaryColor": "#337733",
+            "icon": "assets/icons/btcv.svg",
+            "addresses": {
+                "1": "0x25629a835075cab4ff0f340ee6a350aa16ca475a",
+                "3": "0x25629a835075cab4ff0f340ee6a350aa16ca475a",
+                "4": "0x25629a835075cab4ff0f340ee6a350aa16ca475a",
+                "42": "0x25629a835075cab4ff0f340ee6a350aa16ca475a",
+                "50": "0x25629a835075cab4ff0f340ee6a350aa16ca475a"
+            },
+            "decimals": 18,
+            "displayDecimals": 2
+        },
+        {
             "symbol": "weth",
             "name": "Wrapped Ether",
             "primaryColor": "#3333ff",
@@ -106,6 +121,10 @@
     ],
     "pairs": [
         {
+            "base": "btcv",
+            "quote": "weth"
+        },
+        {
             "base": "zrx",
             "quote": "weth"
         },
@@ -136,8 +155,8 @@
             "value": "weth"
         },
         {
-            "text": "DAI",
-            "value": "dai"
+            "text": "BTCV",
+            "value": "btcv"
         }
     ]
 }
