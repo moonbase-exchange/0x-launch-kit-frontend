@@ -1,6 +1,7 @@
 {
     "general": {
-        "title": "Launch Kit"
+        "title": "Voltex",
+        "icon": "assets/voltex.svg"
     },
     "tokens": [
         {
@@ -122,30 +123,6 @@
     "pairs": [
         {
             "base": "btcv",
-            "quote": "weth"
-        },
-        {
-            "base": "zrx",
-            "quote": "weth"
-        },
-        {
-            "base": "zrx",
-            "quote": "dai"
-        },
-        {
-            "base": "mkr",
-            "quote": "weth"
-        },
-        {
-            "base": "mln",
-            "quote": "weth"
-        },
-        {
-            "base": "dgx",
-            "quote": "weth"
-        },
-        {
-            "base": "rep",
             "quote": "weth"
         }
     ],
