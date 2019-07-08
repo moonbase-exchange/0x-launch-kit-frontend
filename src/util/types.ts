@@ -340,6 +340,7 @@ export interface GeneralConfig {
 export interface ConfigFile {
     tokens: TokenMetaData[];
     pairs: CurrencyPair[];
+    expirationDays: number;
     marketFilters?: Filter[];
     theme?: PartialTheme;
     general?: GeneralConfig;

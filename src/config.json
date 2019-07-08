@@ -3,6 +3,7 @@
         "title": "Voltex",
         "icon": "assets/voltex.svg"
     },
+    "expirationDays": 365,
     "tokens": [
         {
             "symbol": "zrx",

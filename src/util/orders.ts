@@ -1,12 +1,13 @@
 import { assetDataUtils, BigNumber, DutchAuctionWrapper, Order, SignedOrder } from '0x.js';
 import { OrderConfigRequest } from '@0x/connect';
 
+import { Config } from '../common/config';
 import { ZERO_ADDRESS } from '../common/constants';
 import { getRelayer } from '../services/relayer';
 
 import { getKnownTokens } from './known_tokens';
 import * as orderHelper from './orders';
-import { tomorrow } from './time_utils';
+import { inNDays } from './time_utils';
 import { tokenAmountInUnitsToBigNumber, unitsInTokenAmount } from './tokens';
 import { OrderSide, UIOrder } from './types';
 
@@ -115,6 +116,8 @@ export const buildLimitOrder = async (params: BuildLimitOrderParams, side: Order
 
     const isBuy = side === OrderSide.Buy;
 
+    const expirationDays = Config.getConfig().expirationDays;
+
     const orderConfigRequest: OrderConfigRequest = {
         exchangeAddress,
         makerAssetData: isBuy ? quoteTokenAssetData : baseTokenAssetData,
@@ -123,7 +126,7 @@ export const buildLimitOrder = async (params: BuildLimitOrderParams, side: Order
         takerAssetAmount: isBuy ? amount : quoteTokenAmountInBaseUnits,
         makerAddress: account,
         takerAddress: ZERO_ADDRESS,
-        expirationTimeSeconds: tomorrow(),
+        expirationTimeSeconds: inNDays(expirationDays),
     };
 
     return orderHelper.getOrderWithTakerAndFeeConfigFromRelayer(orderConfigRequest);
