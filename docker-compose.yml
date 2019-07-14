@@ -1,0 +1,33 @@
+version: "3"
+services:
+  frontend:
+    image: 0x-launch-kit-frontend
+    environment:
+      VIRTUAL_HOST: exchange.volatility-tokens.com
+      LETSENCRYPT_HOST: exchange.volatility-tokens.com
+      LETSENCRYPT_EMAIL: aleksandr.v.kuzmenko@gmail.com
+      # it doesn't work anyway... Rebuild the project
+      # REACT_APP_RELAYER_URL: 'http://relayer.volatility-tokens.com/v2'
+      REACT_APP_DEFAULT_BASE_PATH: '/erc20'
+      REACT_APP_THEME_NAME: 'DARK_THEME'
+      REACT_APP_NETWORK_ID: 1
+    depends_on:
+      - backend
+  backend:
+    image: 0x-launch-kit-backend
+    environment:
+        VIRTUAL_HOST: relayer.volatility-tokens.com
+        VIRTUAL_PORT: 3000
+        LETSENCRYPT_HOST: relayer.volatility-tokens.com
+        LETSENCRYPT_EMAIL: aleksandr.v.kuzmenko@gmail.com
+        HTTP_PORT: '3000'
+        RPC_URL: 'https://mainnet.infura.io/'
+        NETWORK_ID: '1'
+        WHITELIST_ALL_TOKENS: 'true'
+        FEE_RECIPIENT: '0x0000000000000000000000000000000000000000'
+        MAKER_FEE_ZRX_UNIT_AMOUNT: '0'
+        TAKER_FEE_ZRX_UNIT_AMOUNT: '0'
+networks:
+    default:
+        external:
+            name: universe
