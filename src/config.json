@@ -1,6 +1,5 @@
 {
     "general": {
-        "title": "Voltex",
         "icon": "assets/voltex.svg"
     },
     "expirationDays": 365,

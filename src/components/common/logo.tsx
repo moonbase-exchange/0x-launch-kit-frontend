@@ -41,7 +41,7 @@ export const Logo: React.FC<Props> = props => {
     return (
         <LogoLink onClick={onClick} {...restProps}>
             {image}
-            <LogoText textColor={textColor}>{text}</LogoText>
+            {/*<LogoText textColor={textColor}>{text}</LogoText>*/}
         </LogoLink>
     );
 };
